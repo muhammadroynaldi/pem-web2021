@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Perulangan do/while</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda mau mengulang?");;
+        var counter = 0;
+        do {
+            counter++;
+            ulangi = confirm("Apakah anda mau mengulang?");
+        } while (ulangi)
+        document.write("Perulangan sudah dilakukan sebanyak " + counter + " kali");
+    </script>
+</body>
+</html>

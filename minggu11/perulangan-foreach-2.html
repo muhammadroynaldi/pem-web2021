@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Perulangan Foreach 2</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // kita punya array seperti berikut
+        var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu",
+            "Minggu"];
+        // Kemudian kita tampilkan semua hari
+        // dengan menggunakan method foreach
+        days.forEach(function (day) {
+            document.write("<p>" + day + "</p>");
+        });
+    </script>
+</body>
+
+</html>

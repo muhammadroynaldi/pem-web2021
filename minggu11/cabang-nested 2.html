@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Percabangan Nested 2</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Penyederhanaan menggunakan operator Logika AND (&&)-->
+    <script>
+        var username = prompt("Username:");
+        var password = prompt("Password:");
+        if (username == "belajarkode" && password == "kopi") {
+            document.write("<h2>Selamat datang pak bos!</h2>");
+        } else {
+            document.write("<p>Password salah, coba lagi!</p>");
+        }
+    </script>
+</body>
+</html>

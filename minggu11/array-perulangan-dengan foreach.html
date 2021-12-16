@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array dan perulangan dengan Foreach</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // membuat array
+        var products = ["Senter", "Radio", "Antena", "Obeng"];
+        document.write("<h3>Daftar Produk:</h3>");
+        document.write("<ol>");
+        // menggunakan perulangan untuk mencetak semua isi array
+        products.forEach((data) => {
+            document.write(`<li>${data}</li>`);
+        });
+        document.write("</ol>");
+    </script>
+</body>
+</html>

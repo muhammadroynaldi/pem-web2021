@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Perulangan Foreach 1 Dengan in</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Perulangan Foreach Penyederhanaan menggunakan operator in-->
+    <script>
+        var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+        for (i in languages) {
+            document.write(i + ". " + languages[i] + "<br/>");
+        }
+    </script>
+</body>
+</html>

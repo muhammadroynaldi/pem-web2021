@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Percabangan switch/case 2</title>
+    <style>
+        body{
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nilai = prompt("input nilai");
+        var grade = "";
+        switch (true) {
+            case nilai >= 90:
+                grade = "A";
+                break;
+            case nilai >= 80:
+                grade = "B+";
+                break;
+            case nilai >= 70:
+                grade = "B";
+                break;
+            case nilai >= 60:
+                grade = "C+";
+                break;
+            case nilai >= 50:
+                grade = "C";
+                break;
+            case nilai >= 40:
+                grade = "D";
+                break;
+            case nilai >= 30:
+                grade = "E";
+                break;
+            default:
+                grade = "F";
+        }
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>
+</body>
+</html>
