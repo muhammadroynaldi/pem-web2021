@@ -15,19 +15,31 @@
 
     <div class="container">
         <h3>Sign up</h3>
-          <form>
+        <form action="#" method="POST" onSubmit="validasi()">
               <label class="text-name">Masukan nama lengkap</label><br>
-              <input type="text"><br>
+              <input type="text" name="nama" id="nama"><br>
               <label class="text-name">Masukan Phone/gmail</label><br>
-              <input type="text"><br>
+              <input type="text" name="phone" id="phone"><br>
               <label class="text-password">Masukan Password</label><br>
-              <input type="password"><br>
+              <input type="password" name="pass" id="pass"><br>
               <button><a href="Index.html">Daftar</a></button>
           </form>
       </div>     
 
-    <div class="footer">
+      <div class="footer">
         <p align="center"><b>Copyright © 2021 Muhammad Roynaldi All Rights Reserved</b></p>
-    </div>
+      </div>
 </body>
+<script type="text/javascript">
+  function validasi() {
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("phone").value;
+    var alamat = document.getElementById("pass").value;
+    if (nama != "" && phone!="" && pass!="") {
+        return true;
+    }else{
+        alert('Anda harus mengisi data dengan lengkap !');
+    }
+}
+</script>
 </html>

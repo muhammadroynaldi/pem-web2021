@@ -41,10 +41,7 @@ header ul{
 }
 
 header ul li{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 200px;
+    padding: 30px;
     font-size: 36px;
     display: inline-block;
 }
@@ -115,11 +112,10 @@ a{
     padding-top: 6px;
     padding-bottom: 6px;
     width: 244px;
-height: 59.14px;
-left: 397px;
-top: 642.48px;
-
-background: #7FBBF2;
+    height: 59.14px;
+    left: 397px;
+    top: 642.48px;
+    background: #7FBBF2;
 }
 
 .lesson-icon a{
@@ -128,12 +124,13 @@ background: #7FBBF2;
 }
 
 footer{
+    margin-top: 140px;
     position: absolute;
     width: 1518px;
-height: 190px;
-left: 0px;
-top: 834px;
-background: rgba(58, 0, 0, 0.5);
+    height: 50px;
+    left: 0px;
+    top: 834px;
+    background: rgba(58, 0, 0, 0.5);
 }
 
 footer p{

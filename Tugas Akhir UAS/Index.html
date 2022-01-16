@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Came_RS</title>
-  </head>
+    <script type="text/javascript">
+      function submitdata(){
+        var phone = document.getElementById("phone").value;
+        var pass  = document.getElementById("pass").value;
+
+        alert("phone/email : " + phone + " password :  " + pass);
+      }
+    </script>
+</head>
 <body>
     <div class="header"> 
         <h1>CAME_RS</h1>
@@ -15,16 +23,15 @@
 
     <div class="container">
         <h3>Log in</h3>
-          <form>
+        <form action="#" method="POST" onSubmit="validasi()">
               <label class="text-name">Phone/gmail</label><br>
-              <input type="text"><br>
+              <input type="text" name="phone" id="phone"><br>
               <label class="text-password">Password</label><br>
-              <input type="password"><br>
-              <button><a href="home.html">Log in</a></button>
+              <input type="password" name="pass" id="pass"><br>
+              <button><a href="sewa.html" onclick="submitdata()">Log in</a></button>
               <button><a href="sign up.html">sign up</a></button>
           </form>
-      </div>     
-
+    </div>    
     <div class="footer">
         <p align="center"><b>Copyright © 2021 Muhammad Roynaldi All Rights Reserved</b></p>
     </div>
